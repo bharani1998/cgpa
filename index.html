@@ -1,0 +1,26 @@
+<script>// <![CDATA[
+function multiplyBy() 
+{ 
+sem1 = document.getElementById("firstNumber").value; 
+sem2 = document.getElementById("secondNumber").value; 
+sem3 = document.getElementById("thirdNumber").value;
+sem4 = document.getElementById("fourthNumber").value; 
+sem5 = document.getElementById("fifthNumber").value; 
+sem6 = document.getElementById("sixNumber").value; 
+sem7 = document.getElementById("sevNumber").value;  
+sem8 = document.getElementById("evNumber").value; 
+document.getElementById("result").innerHTML = ((21 * sem1)+(23 * sem2)+(20 *sem3)+(27*sem4)+(sem5*24)+(24*sem6)+(18*sem7)+(16*sem8))/173;
+ }
+// ]]></script>
+<form>1st SEM GPA : <input type="text" id="firstNumber" /><br /> 
+<br>2nd SEM GPA : <input type="text" id="secondNumber" /><br />
+<br>3rd SEM GPA : <input type="text" id="thirdNumber" /><br />
+<br>4rd SEM GPA : <input type="text" id="fourthNumber" /><br />
+<br>5rd SEM GPA : <input type="text" id="fifthNumber" /><br />
+<br>6th SEM GPA : <input type="text" id="sixNumber" /><br />
+<br>7th SEM GPA : <input type="text" id="sevNumber" /><br />
+<br>8th SEM GPA : <input type="text" id="evNumber" /><br />
+
+<pre>            <input type="button" onclick="multiplyBy()" value="Calculate CGPA" /></pre>
+</form>
+<p>Your CGPA IS : <br /> <span id="result"></span></p>
